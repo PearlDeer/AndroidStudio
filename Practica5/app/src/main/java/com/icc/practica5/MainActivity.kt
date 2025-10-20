@@ -14,6 +14,7 @@ import com.icc.practica5.databinding.ActivityMainBinding
 import com.parse.ParseFile
 import com.parse.ParseObject
 import com.parse.ParseQuery
+import android.util.Log
 
 class MainActivity : AppCompatActivity(){
 
@@ -64,6 +65,8 @@ class MainActivity : AppCompatActivity(){
         binding.webViewPdf.visibility = View.GONE
         viewToShow?.visibility = View.VISIBLE
     }
+
+
 
     private fun showPdf(url: String?) {
         if (url == null) {
