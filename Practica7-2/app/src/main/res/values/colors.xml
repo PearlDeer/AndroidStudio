@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Colores para el control -->
+    <color name="star_filled">#FFD700</color>
+    <color name="star_empty">#E0E0E0</color>
+    <color name="star_filled_custom">#FF5722</color>
+    <color name="star_empty_custom">#FFCCBC</color>
+
+    <!-- QuantityStepper colors -->
+    <color name="ripple_tint">#4D03DAC5</color>
+    <color name="teal_700">#018786</color>
+</resources>

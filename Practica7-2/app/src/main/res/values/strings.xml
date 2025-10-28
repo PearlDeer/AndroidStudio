@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Custom Views Demo</string>
+
+    <!-- Accesibilidad para AdvancedRatingBar -->
+    <string name="rating_bar_default_description">Barra de calificación</string>
+    <string name="rating_bar_current_rating">Calificación actual: %1$.1f de %2$d estrellas</string>
+    <string name="rating_bar_tap_to_rate">Toca para calificar</string>
+    <string name="rating_bar_rating_changed">Calificación cambiada a %1$.1f estrellas</string>
+    <string name="rating_bar_half_star">media estrella</string>
+    <string name="rating_bar_full_star">estrella completa</string>
+
+    <!-- Demo screen -->
+    <string name="demo_title">AdvancedRatingBar Demo</string>
+    <string name="demo_basic">Rating Básico</string>
+    <string name="demo_small">Rating Pequeño</string>
+    <string name="demo_large">Rating Grande</string>
+    <string name="demo_readonly">Rating Solo Lectura</string>
+    <string name="demo_custom_colors">Rating Colores Personalizados</string>
+    <string name="current_rating">Rating: %.1f / %d</string>
+
+    <!-- QuantityStepper strings -->
+    <string name="desc_minus">Disminuir cantidad</string>
+    <string name="desc_plus">Aumentar cantidad</string>
+    <string name="desc_quantity">Cantidad</string>
+</resources>
