@@ -8,8 +8,8 @@ class ParseInt: Application(){
         super.onCreate()
         Parse.initialize(
             Parse.Configuration.Builder(this)
-                .applicationId("rZfeikEA6XrYK6u8AnNHg9auiBOg1tqz0lScuFp1")
-                .clientKey("UnHc6JZxTugQA0WtMiHSNl3FCSR6uuQN88n4YA2z")
+                .applicationId("LdxLhC41AAlTLfL0hVGv6dA52fNvKGO3nLthfpD2")
+                .clientKey("P5t7uGojo6r1s5QoQL4dObF8rH000hY9mwNBKrlx")
                 .server("https://parseapi.back4app.com/")
                 .build()
         )

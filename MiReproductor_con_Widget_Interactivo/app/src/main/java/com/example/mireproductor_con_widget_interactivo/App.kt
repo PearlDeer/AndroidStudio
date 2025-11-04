@@ -1,4 +1,4 @@
-package com.icc.practica6
+package com.example.mireproductor_con_widget_interactivo
 
 import android.app.Application
 import com.parse.Parse
