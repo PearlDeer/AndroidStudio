@@ -1,4 +1,4 @@
-package com.example.mireproductor_con_widget_interactivo
+package com.example.mireproductor
 
 import android.app.Application
 import com.parse.Parse
