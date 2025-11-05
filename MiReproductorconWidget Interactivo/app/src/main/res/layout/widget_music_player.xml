@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECF6F8"
+    android:padding="12dp">
+
+    <!-- Header con título -->
+    <TextView
+        android:id="@+id/widgetHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:textColor="#37889A"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:paddingBottom="8dp" />
+
+    <!-- Contenedor de información de la canción -->
+    <LinearLayout
+        android:id="@+id/songInfoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/widgetHeader"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingHorizontal="8dp">
+
+        <!-- Icono de música -->
+        <ImageView
+            android:id="@+id/widgetMusicIcon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_music_note"
+            android:contentDescription="Música"
+            android:layout_marginBottom="6dp"
+            android:tint="#37889A" />
+
+        <!-- Título de la canción -->
+        <TextView
+            android:id="@+id/widgetSongTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxLines="1"
+            android:text="RETRO BEATS"
+            android:textAlignment="center"
+            android:textColor="#37889A"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif" />
+
+    </LinearLayout>
+
+    <!-- Controles de reproducción -->
+    <LinearLayout
+        android:id="@+id/controlsContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/songInfoContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Botón Previous -->
+        <ImageButton
+            android:id="@+id/widgetBtnPrevious"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="4dp"
+            android:background="#ECF6F8"
+            android:contentDescription="Anterior"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/ic_media_previous"
+            android:tint="#37889A"
+            android:padding="8dp" />
+
+        <!-- Botón Play/Pause -->
+        <ImageButton
+            android:id="@+id/widgetBtnPlayPause"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_margin="6dp"
+            android:background="#37889A"
+            android:contentDescription="Reproducir/Pausar"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/ic_media_play"
+            android:tint="#FFFFFF"
+            android:padding="10dp" />
+
+        <!-- Botón Next -->
+        <ImageButton
+            android:id="@+id/widgetBtnNext"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="4dp"
+            android:background="#ECF6F8"
+            android:contentDescription="Siguiente"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/ic_media_next"
+            android:tint="#37889A"
+            android:padding="8dp" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

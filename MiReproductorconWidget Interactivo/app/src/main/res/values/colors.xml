@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Retro Gamer Tetris Theme Colors -->
+    <color name="retro_primary">#1A1A2E</color> <!-- Fondo oscuro retro -->
+    <color name="retro_primary_dark">#0F0F1E</color> <!-- Casi negro -->
+    <color name="retro_accent">#FF6B35</color> <!-- Naranja neón retro -->
+    <color name="retro_accent_dark">#E85D2C</color> <!-- Naranja oscuro -->
+    <color name="retro_secondary">#16213E</color> <!-- Azul oscuro arcade -->
+    <color name="retro_text_primary">#F0F0F0</color> <!-- Blanco pixel -->
+    <color name="retro_text_secondary">#A0A0A0</color> <!-- Gris pixel -->
+    <color name="retro_background">#0F0F23</color> <!-- Fondo muy oscuro -->
+    <color name="retro_surface">#1E1E3F</color> <!-- Superficie oscura -->
+    <color name="retro_error">#FF3838</color> <!-- Rojo neón -->
+    
+    <!-- Colores de bloques Tetris -->
+    <color name="tetris_cyan">#00F0F0</color> <!-- Bloque I -->
+    <color name="tetris_blue">#0000F0</color> <!-- Bloque J -->
+    <color name="tetris_orange">#F0A000</color> <!-- Bloque L -->
+    <color name="tetris_yellow">#F0F000</color> <!-- Bloque O -->
+    <color name="tetris_green">#00F000</color> <!-- Bloque S -->
+    <color name="tetris_purple">#A000F0</color> <!-- Bloque T -->
+    <color name="tetris_red">#F00000</color> <!-- Bloque Z -->
+    
+    <!-- Colores neón adicionales -->
+    <color name="neon_pink">#FF006E</color>
+    <color name="neon_green">#39FF14</color>
+    <color name="neon_blue">#00F5FF</color>
+</resources>

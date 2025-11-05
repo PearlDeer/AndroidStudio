@@ -11,52 +11,45 @@ import java.text.NumberFormat
 import java.util.*
 
 class ProductoAdapter(
-    private val onItemClick: (Producto) -> Unit
-) : ListAdapter<Producto, ProductoAdapter.VH>(DIFF) {
+    private val onItemClick: (Cancion) -> Unit
+) : ListAdapter<Cancion, CancionAdapter.VH>(DIFF) {
 
     companion object {
-        val DIFF = object : DiffUtil.ItemCallback<Producto>() {
-            override fun areItemsTheSame(oldItem: Producto, newItem: Producto): Boolean {
+        val DIFF = object : DiffUtil.ItemCallback<Cancion>() {
+            override fun areItemsTheSame(oldItem: Cancion, newItem: Cancion): Boolean {
                 return oldItem.id == newItem.id
             }
 
-            override fun areContentsTheSame(oldItem: Producto, newItem: Producto): Boolean {
+            override fun areContentsTheSame(oldItem: Cancion, newItem: Cancion): Boolean {
                 return oldItem == newItem
             }
         }
     }
 
-    inner class VH(val b: ItemproductoBinding) : RecyclerView.ViewHolder(b.root)
+    inner class VH(val b: ItemCancionBinding) : RecyclerView.ViewHolder(b.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VH {
         val inf = LayoutInflater.from(parent.context)
-        val binding = ItemproductoBinding.inflate(inf, parent, false)
+        val binding = ItemCancionBinding.inflate(inf, parent, false)
         return VH(binding)
     }
 
     override fun onBindViewHolder(holder: VH, position: Int) {
-        val p = getItem(position)
-        holder.b.txtNombre.text = p.nombre
+        val c = getItem(position)
+        holder.b.txtNombre.text = c.nombre
+        holder.b.txtDuracion.text = c.duracion
 
-        // Formato monetario MXN
-        val nf = NumberFormat.getCurrencyInstance(Locale("es", "MX"))
-        holder.b.txtPrecio.text = nf.format(p.precio)
-
-        // Cargar imagen con Glide: placeholder y error
-        if (!p.imagenUrl.isNullOrBlank()) {
+        if (!c.imgUrl.isNullOrBlank()) {
             Glide.with(holder.itemView)
-                .load(p.imagenUrl)
+                .load(c.imgUrl)
                 .centerCrop()
-                .placeholder(android.R.drawable.ic_menu_report_image) // puedes cambiar por tu drawable
-                .error(android.R.drawable.stat_notify_error) // puedes cambiar por tu drawable
-                .into(holder.b.imgProducto)
+                .placeholder(android.R.drawable.ic_menu_report_image)
+                .error(android.R.drawable.stat_notify_error)
+                .into(holder.b.imgCancion)
         } else {
-            // Si no hay URL, mostrar placeholder por defecto
-            holder.b.imgProducto.setImageResource(android.R.drawable.ic_menu_report_image)
+            holder.b.imgCancion.setImageResource(android.R.drawable.ic_menu_report_image)
         }
 
-        holder.itemView.setOnClickListener {
-            onItemClick(p)
-        }
+        holder.itemView.setOnClickListener { onItemClick(c) }
     }
 }
