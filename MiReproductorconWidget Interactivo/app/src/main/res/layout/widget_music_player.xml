@@ -47,7 +47,6 @@
             android:ellipsize="marquee"
             android:marqueeRepeatLimit="marquee_forever"
             android:maxLines="1"
-            android:text="RETRO BEATS"
             android:textAlignment="center"
             android:textColor="#37889A"
             android:textSize="15sp"
